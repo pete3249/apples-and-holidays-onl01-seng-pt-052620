@@ -78,16 +78,17 @@ end
   
   #     if decorations.select {|string| string == "BBQ"}
 
-#def add_supply_to_winter_holidays(holiday_hash, supply)
+#def all_winter_holiday_supplies(holiday_hash)
+  #winter_supplies = []
   #holiday_hash.each do |season, data|
-    #if season == :winter
-      #data.each do |holiday, decorations|
-       # decorations << supply
-      #end 
-    #end 
+   # if season == :winter
+    #  data.each do |holiday, decorations|
+    #    winter_supplies << decorations
+    #  end 
+   # end 
  # end 
-#end 
-
+#winter_supplies.flatten
+end
 
 
 
