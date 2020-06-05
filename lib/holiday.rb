@@ -63,7 +63,6 @@ def all_holidays_with_bbq(holiday_hash)
     data.map do |holiday, decorations|
       decorations.include? ("BBQ")
         holiday
-      end 
     end 
   end 
 end
