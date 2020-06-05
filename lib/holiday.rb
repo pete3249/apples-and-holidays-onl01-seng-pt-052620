@@ -59,16 +59,13 @@ def all_supplies_in_holidays(holiday_hash)
 end 
 
 def all_holidays_with_bbq(holiday_hash)
+  holidays_with_bbq = []
   holiday_hash.map do |season, data|
     data.map do |holiday, decorations|
       decorations.include?("BBQ")
-        holiday
+        holidays_with_bbq << holiday
     end 
   end 
+  holidays_with_bbq
 end
-
-
-
-
-
 
