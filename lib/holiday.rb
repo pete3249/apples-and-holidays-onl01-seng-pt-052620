@@ -61,7 +61,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map.flatten do |season, data|
     data.map do |holiday, decorations|
-      holidays_with_bbq << holiday if decorations.include?("BBQ")
+      holiday if decorations.include?("BBQ")
     end 
   end 
 end
