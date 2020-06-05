@@ -23,8 +23,7 @@ end
 def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash.each do |season, data|
     if season == :winter
-      data.each do |holiday, decorations|
-        decorations << supply
+      data.map {|holiday, decorations| decorations << supply}
       end 
     end 
   end 
@@ -80,7 +79,15 @@ end
   
   #     if decorations.select {|string| string == "BBQ"}
 
-
+#def add_supply_to_winter_holidays(holiday_hash, supply)
+  #holiday_hash.each do |season, data|
+    #if season == :winter
+      #data.each do |holiday, decorations|
+       # decorations << supply
+      #end 
+    #end 
+ # end 
+#end 
 
 
 
