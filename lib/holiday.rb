@@ -64,7 +64,6 @@ def all_holidays_with_bbq(holiday_hash)
         if decorations == "BBQ"
           holiday
         end 
-      end 
     end 
   end 
 end 
