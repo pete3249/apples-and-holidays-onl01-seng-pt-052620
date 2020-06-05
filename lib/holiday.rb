@@ -61,11 +61,10 @@ def all_supplies_in_holidays(holiday_hash)
 end 
 
 def all_holidays_with_bbq(holiday_hash)
-  holidays_with_bbq = ""
+  holidays_with_bbq = []
   holiday_hash.each do |season, data|
     data.map do |holiday, decorations|
       if decorations.select {|string| string == "BBQ"}
-        binding.pry
         holidays_with_bbq << holiday
       end 
     end 
