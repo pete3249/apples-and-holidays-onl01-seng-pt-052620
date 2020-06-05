@@ -41,10 +41,12 @@ def all_winter_holiday_supplies(holiday_hash)
   winter_supplies = []
   holiday_hash.each do |season, data|
     if season == :winter
-      data.map do |holiday, decorations| 
-        winter_supplies << decorations.flatten
+      data.each do |holiday, decorations| 
+        winter_supplies << decorations
+      end 
     end 
   end 
+  winter_supplies.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
