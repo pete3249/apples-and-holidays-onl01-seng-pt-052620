@@ -64,9 +64,10 @@ def all_holidays_with_bbq(holiday_hash)
   holidays_with_bbq = []
   holiday_hash.each do |season, data|
     data.each do |holiday, decorations|
-      if decorations.select {|string| string == "BBQ"}
-        binding.pry
-        holidays_with_bbq << holiday
+      decorations.each do |item|
+        if item == "BBQ"
+          holidays_with_bbq << holiday
+        end 
       end 
     end 
   end 
@@ -76,6 +77,8 @@ end
   
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  
+  #     if decorations.select {|string| string == "BBQ"}
 
 
 
