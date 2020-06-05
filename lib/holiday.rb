@@ -61,12 +61,9 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map do |season, data|
     data.map do |holiday, decorations|
-      binding.pry
-        if decorations == "BBQ"
-       
-          holiday
-        end 
-    end
+      decorations.map {|string| string == "BBQ"}
+        holiday
+    end 
   end 
 end 
   
