@@ -62,12 +62,11 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map do |season, data|
     data.map do |holiday, decorations|
         if decorations == "BBQ"
-          holidays_with_bbq << holiday
+          holiday
         end 
       end 
     end 
   end 
-  holidays_with_bbq
 end 
   
   
